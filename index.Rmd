@@ -2,6 +2,7 @@
 title: 'Thesis title'
 degreetype: 'Bachelor of Commerce (Honours)'
 author: 'Joe Bloggs'
+studentid: 12345678
 output: bookdown::pdf_book
 site: bookdown::bookdown_site
 link-citations: yes

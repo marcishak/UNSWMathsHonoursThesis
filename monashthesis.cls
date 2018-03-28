@@ -1,7 +1,7 @@
 %% monashthesis Class for LaTeX2e.
-%% Version 4.1
+%% Version 5.0
 %% By Rob J. Hyndman.
-%% 30 November 2016
+%% 28 March 2018
 %%
 %% This class file is for honours and postgraduate research students
 %% in the Department of Econometrics & Business Statistics
@@ -13,46 +13,27 @@
 %% FONT
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\RequirePackage{bera}
 \RequirePackage{mathpazo}
-\RequirePackage[lf,t]{carlito}
-
 
 \newif\ifsinglesp@
 \newif\ifdoublesp@
 \newif\ifsingleside@
-\newif\ifarticle@
-\article@false
 \doublesp@true
 \singleside@false
 \DeclareOption{singleside}{\singleside@true}
 \DeclareOption{doubleside}{\singleside@false}
 \DeclareOption{singlespace}{\singlesp@true}
 \DeclareOption{doublespace}{\doublesp@true}
-\DeclareOption{PhD}{\def\degreetitle{Doctor of Philosophy}}
-\DeclareOption{MComm}{\def\degreetitle{Master of Commerce}}
-\DeclareOption{MAE}{\def\degreetitle{Master of Applied Econometrics}}
-\DeclareOption{MPhil}{\def\degreetitle{Master of Philosophy}}
-\DeclareOption{Hons}{\def\degreetitle{Bachelor of Commerce (Honours)}}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
-
-\ExecuteOptions{Hons}
 
 \ProcessOptions
 
-\ifarticle@%
-  \ifsingleside@%
-    \LoadClass[a4paper,oneside,11pt]{article}
-  \else%
-    \LoadClass[a4paper,11pt,twoside]{article}
-  \fi%
+\ifsingleside@%
+  \LoadClass[a4paper,oneside,openany,draft,11pt]{report}
 \else%
-  \ifsingleside@%
-    \LoadClass[a4paper,oneside,openany,draft,11pt]{report}
-  \else%
-    \LoadClass[a4paper,11pt,openright,twoside]{report}
-  \fi%
+  \LoadClass[a4paper,11pt,openright,twoside]{report}
 \fi%
-
 
 %% Page dimensions
 \ifsingleside@%
@@ -189,8 +170,10 @@
 
 %% \author, \title are defined in report; here are the rest of the
 %% front matter defining macros
+\def\degreetitle{Degree not specified}
 \def\submitdate#1{\gdef\@submitdate{#1}}
 \def\degrees#1{\gdef\@degrees{#1}}
+\def\studentid#1{\gdef\@degrees{#1}}
 \def\@title{}\def\@author{}
 \def\authorname{\@author}
 \def\@degrees{}
@@ -228,24 +211,15 @@
     \end{center}
     \newpage\thispagestyle{empty}}}
 
-\ifarticle@\else
-  \numberwithin{section}{chapter}
-\fi
-\numberwithin{equation}{section}
+\numberwithin{section}{chapter}
+\numberwithin{equation}{chapter}
 
 \setcounter{tocdepth}{1}
 
-\ifarticle@
-  \def\prefacesection#1{%
-      \section*{#1}
-      \addcontentsline{toc}{section}{#1}
-      \markboth{#1}{#1}}
-\else%
-  \def\prefacesection#1{%
-      \chapter*{#1}
-      \addcontentsline{toc}{chapter}{#1}
-      \markboth{#1}{#1}}
-\fi
+\def\prefacesection#1{%
+    \chapter*{#1}
+    \addcontentsline{toc}{chapter}{#1}
+    \markboth{#1}{#1}}
 
 \def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
 \hbox{}
@@ -266,10 +240,8 @@
 % to display the bibliography in table of contents
 \usepackage[nottoc,notlot,notlof]{tocbibind}
 \usepackage{tocloft}
-\ifarticle@\else
-  \renewcommand{\cftchappagefont}{\sffamily\bfseries}
-  \renewcommand{\cftchapfont}{\sffamily\bfseries}
-\fi
+\renewcommand{\cftchappagefont}{\sffamily\bfseries}
+\renewcommand{\cftchapfont}{\sffamily\bfseries}
 \renewcommand{\cftsecpagefont}{\sffamily}
 \renewcommand{\cftsubsecpagefont}{\sffamily}
 \renewcommand{\cftsecfont}{\sffamily}
