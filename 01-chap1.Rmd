@@ -10,11 +10,11 @@ library(forecast)
 library(ggplot2)
 ```
 
-# Introduction and background information {#ch:intro}
+# Introduction {#ch:intro}
 
 This is where you introduce the main ideas of your thesis, and an overview of the context and background.
 
-In a PhD, Chapter 2 would normally contain a literature review. Typically, Chapters 3--5 would contain your own contributions. Think of each of these as potential papers to be submitted to journals. Finally, Chapter 6 provides some concluding remarks, discussion, ideas for future research, and so on. Appendixes can contain additional material that don't fit into any chapters, but that you want to put on record. For example, additional tables, output, etc.
+Later chapters should be divided into coherent pieces describing your analysis. The final chapter should provide some concluding remarks, discussion, ideas for future research, and so on. Appendixes can contain additional material that don't fit into any chapters, but that you want to put on record. For example, additional tables, output, etc.
 
 ## Rmarkdown
 
@@ -72,11 +72,11 @@ currentgdp <- rep(tail(sales[,"GDP"],1),4)
 fc <- forecast(fit, xreg=data.frame(AdBudget=currentad, GDP=currentgdp))
 knitLatex::xTab(format(as.data.frame(fc), nsmall=1, digits=1),
    caption.bottom="Forecasts for the next year assuming Advertising budget and GDP are unchanged.",
-   booktabs=TRUE, 
+   booktabs=TRUE, coldef='lrrrr',
    label='tab:salesforecasts')
 ```
 
-Again, notice the use of labels and references to automatically generate Table numbers. In this case, we need to generate the label ourselves. 
+Again, notice the use of labels and references to automatically generate table numbers. In this case, we need to generate the label ourselves. 
 
 The `knitLatex` package is useful for generating tables from R output. Other packages can do similar things including the `kable` function in `knitr` which is somewhat simpler but you have less control over the result. If you use `knitLatex` to generate tables, don't forget to include `results="asis"` in the chunk settings.
 
