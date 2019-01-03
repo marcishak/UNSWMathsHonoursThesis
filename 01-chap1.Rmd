@@ -20,7 +20,7 @@ Later chapters should be divided into coherent pieces describing your analysis. 
 
 In this template, the rest of the chapter shows how to use Rmarkdown. The big advantage of using Rmarkdown is that it allows you to include your R code directly into your thesis, to ensure there are no errors in copying and pasting, and that everything is reproducible. It also helps you stay better organized.
 
-For details on using _R Markdown_ see <http://rmarkdown.rstudio.com>.  
+For details on using _R Markdown_ see <http://rmarkdown.rstudio.com>.
 
 ## Data
 
@@ -46,9 +46,9 @@ We can fit a dynamic regression model to the sales data.
 
 ```{r, echo=FALSE}
 fit <- auto.arima(sales[,"Sales"], xreg=sales[,2:3], D=1)
-if(!identical(fit$arma, c(0L,1L,0L,1L,4L,0L,1L)))
-  stop("Model not ARIMA(0,0,1)(0,1,1)[4]")
-#This is an example of how to put checks into your R code to warn you if something has gone wrong. 
+if(!identical(fit$arma, c(1L,0L,0L,1L,4L,0L,1L)))
+  stop("Model not ARIMA(1,0,0)(0,1,1)[4]")
+#This is an example of how to put checks into your R code to warn you if something has gone wrong.
 ```
 
 If $y_t$ denotes the sales in quarter $t$, $x_t$ denotes the corresponding advertising budget and $z_t$ denotes the GDP, then the resulting model is:
@@ -56,9 +56,9 @@ If $y_t$ denotes the sales in quarter $t$, $x_t$ denotes the corresponding adver
   y_t - y_{t-4} = \beta (x_t-x_{t-4}) + \gamma (z_t-z_{t-4}) + \theta_1 \varepsilon_{t-1} + \Theta_1 \varepsilon_{t-4} + \varepsilon_t
 \end{equation}
 where
-$\beta = `r format(fit[['coef']]['AdBudget'], digits=2, nsmall=2)`$, 
-$\gamma = `r format(fit[['coef']]['GDP'], digits=2, nsmall=2)`$, 
-$\theta_1 = `r format(fit[['coef']]['ma1'], digits=2, nsmall=2)`$, 
+$\beta = `r format(fit[['coef']]['AdBudget'], digits=2, nsmall=2)`$,
+$\gamma = `r format(fit[['coef']]['GDP'], digits=2, nsmall=2)`$,
+$\theta_1 = `r format(fit[['coef']]['ma1'], digits=2, nsmall=2)`$,
 and
 $\Theta_1 = `r format(fit[['coef']]['sma1'], digits=2, nsmall=2)`$.
 
@@ -69,14 +69,14 @@ Let's assume future advertising spend and GDP are at the current levels. Then fo
 ```{r forecasts, results="asis"}
 currentad <- rep(tail(sales[,"AdBudget"],1),4)
 currentgdp <- rep(tail(sales[,"GDP"],1),4)
-fc <- forecast(fit, xreg=data.frame(AdBudget=currentad, GDP=currentgdp))
+fc <- forecast(fit, xreg=cbind(AdBudget=currentad, GDP=currentgdp))
 knitLatex::xTab(format(as.data.frame(fc), nsmall=1, digits=1),
    caption.bottom="Forecasts for the next year assuming Advertising budget and GDP are unchanged.",
    booktabs=TRUE, coldef='lrrrr',
    label='tab:salesforecasts')
 ```
 
-Again, notice the use of labels and references to automatically generate table numbers. In this case, we need to generate the label ourselves. 
+Again, notice the use of labels and references to automatically generate table numbers. In this case, we need to generate the label ourselves.
 
 The `knitLatex` package is useful for generating tables from R output. Other packages can do similar things including the `kable` function in `knitr` which is somewhat simpler but you have less control over the result. If you use `knitLatex` to generate tables, don't forget to include `results="asis"` in the chunk settings.
 
