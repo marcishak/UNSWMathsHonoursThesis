@@ -1,9 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%  A small sample UNSW Honours Thesis file.
-%  Any questions to Ian Doust i.doust@unsw.edu.au
-%
-% Edited CSG 11.9.2015, use some of Gery's ideas for front matter; add a conclusion chapter.
+%  Bookdown UNSW thesis template originally based on the work of
+%  Ian Doust
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -130,26 +127,16 @@
 \hyphenation{Mar-cin-kie-wicz Rade-macher}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% All the old stuff has been moved to preamble.tex
-%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% point biblatex to the .bib file
 \bibliography{thesisrefs}
 
 
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%  And now the document begins
-%  The \beforepreface and \afterpreface commands puts the
-%  contents page etc in
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%  And now the document begins all the .Rmd files go here
+
 
 \begin{document}
 
@@ -164,13 +151,10 @@ $body$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
-  % \bibliographystyle{unswthesis}
 
-% \begin{thebibliography}{999}
 
 \printbibliography[title=References, heading=bibintoc]
 
-% \end{thebibliography}
 
 
 
