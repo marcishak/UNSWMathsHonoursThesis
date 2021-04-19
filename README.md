@@ -39,6 +39,7 @@ There are a couple of key files to make a note of:
   * These files are usually named [A-Z][0-9]-text.Rmd
   * They contain the content (prose,code,maths) that makes up the body of your thesis
   * They're in Rmarkdown which supports Markdown first and Latex second
+    * [However, raw latex code can be embeded by surrounding it with a code fence with the =latex option](https://bookdown.org/yihui/rmarkdown-cookbook/raw-latex.html)
 * `unswthesis.tex`
   * This file is the template and preamble of your thesis it contains a bunch of 
   shortcuts you can use within your thesis and defines it's overall structure.
@@ -59,3 +60,8 @@ list parameter.
   this is the file which you add your bibliographic sources and citations
   * Citations are not included unless they are sourced in the body text, 
   look at `B2-chap2.Rmd` for more details
+
+
+Lastly, if you want to do something extra or run into trouble I highly recommend
+going through the [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook)
+and/or the [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)

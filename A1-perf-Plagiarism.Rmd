@@ -22,13 +22,14 @@ thesis may, for the purpose of assessing it:
 respect of Student Academic Misconduct, and am aware of any potential plagiarism penalties which may
 apply.\vspace{24pt}
 
+```{=latex}
 \vskip 2pc \noindent By signing
 this declaration I am
 agreeing to the statements and conditions above.
 \vskip 2pc \noindent
 Signed: \rule{7cm}{0.25pt} \hfill Date: \rule{4cm}{0.25pt} \newline
 \vskip 1pc
-
+````
 \afterpage{\blankpage}
 
 
