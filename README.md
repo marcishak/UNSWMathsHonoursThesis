@@ -1,7 +1,11 @@
 UNSW Maths and Stats Honours Thesis Rmarkdown Template
 =========================================
 
+<<<<<<< HEAD
 This repository provides a template for a UNSW Maths and Stats Honours thesis using Rmarkdown with the bookdown package. It is designed to match with the school given [Honours Thesis Style](https://www.maths.unsw.edu.au/currentstudents/honours-thesis-information). It's partly based on that original style as well as [Rob J Hyndman's template for Monash Honours Students](https://github.com/robjhyndman/MonashHonoursThesis) (which this forks).
+=======
+This repository provides a template for a UNSW Maths and Stats Honours thesis using Rmarkdown with the bookdown package. It is designed to be match with the school given [Honours Thesis Style](https://www.maths.unsw.edu.au/currentstudents/honours-thesis-information). It's partly based on that original style as well as [Rob J Hyndman's template for Monash Honours Students](https://github.com/robjhyndman/MonashHonoursThesis)
+>>>>>>> 35d6cd7ab590abc10501badd41547a505897ade9
 
 
 ## Requirements
@@ -18,14 +22,22 @@ install.packages('tinytex')
 tinytex::install_tinytex()
 ```
 
+<<<<<<< HEAD
 Note: the first time that you `kint` everything together it can take a while as 
+=======
+Note: the first time that you `kint` everything together can take a while as 
+>>>>>>> 35d6cd7ab590abc10501badd41547a505897ade9
 latex gets and installs all the packages it needs. Don't fret!
 
 
 ## Structure and Setup
 
 `bookdown` naturally works by collating individual Rmarkdown files (`.Rmd`) and
+<<<<<<< HEAD
 `knit`-ing them together into a single pdf through Rmarkdown (`Rmd` to `md`), 
+=======
+`knit`ing them together into a single pdf through Rmarkdown (`Rmd` to `md`), 
+>>>>>>> 35d6cd7ab590abc10501badd41547a505897ade9
 pandoc (`md` to `tex`) and latex (`tex` to `pdf`). 
 
 This template is designed to leverage bookdown to enable the effective 
