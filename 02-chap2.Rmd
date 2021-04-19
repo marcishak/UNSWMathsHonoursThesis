@@ -23,4 +23,3 @@ Empirical studies by @MH79 and @Metal82 found little difference in forecast accu
 
 The methods were less popular in academic circles until  @OKS97 introduced a state space formulation of some of the methods, which was extended in @HKSG02 to cover the full range of exponential smoothing methods.
 
-

@@ -1,8 +1,7 @@
 ---
 title: 'Thesis title'
-degreetype: 'Bachelor of Commerce (Honours)'
-author: 'Joe Bloggs'
-studentid: 12345678
+student: 'Joe Bloggs'
+supervisor: 'Karl Marx'
 output: bookdown::pdf_book
 site: bookdown::bookdown_site
 link-citations: yes
@@ -15,9 +14,30 @@ The actual thesis content is in several Rmd files.
 
 You'll need to edit the _bookdown.yml file to set the order in which you'd like them to appear. 
 
-If you have specific LaTeX packages to add, put them in monashthesis.tex.
+If you have specific LaTeX packages to add, put them in unswthesis.tex.
 
 You will need to ensure you have installed the knitr and bookdown packages for R.
 
 You will also need LaTeX installed on your computer.
 -->
+
+
+<!-- Title Page -->
+
+\title{$title$}
+
+\authornameonly{$student$}
+
+\author{\Authornameonly\\{\bigskip}Supervisor: $supervisor$}
+
+\hypersetup{
+     %pdfsubject={The Subject},
+     %pdfkeywords={Some Keywords},
+     pdfauthor={$student$},
+     pdftitle={$title$},
+     pdfproducer={Bookdown with LaTeX}
+}
+
+\copyrightfalse
+\figurespagefalse
+\tablespagefalse
