@@ -2,13 +2,11 @@ book_filename: "thesis"
 language:
   ui:
     chapter_name: "Chapter "
-rmd_files: ["index.Rmd",
-  "perf-Plagiarism.Rmd",
-  "perf-Acknowledgements.Rmd",
-  "perf-Abstract.Rmd",
-  "01-chap1.Rmd",
-  "02-chap2.Rmd",
-  "A-appA.Rmd"]
-delete_merged_file: FALSE
-includes:
-    in_header: "preamble.tex"
+rmd_files: ["A0-index.Rmd",
+ "A1-perf-Plagiarism.Rmd",
+ "A2-perf-Acknowledgements.Rmd",
+ "A3-perf-Abstract.Rmd",
+ "B1-chap1.Rmd",
+ "B2-chap2.Rmd",
+ "C1-appA.Rmd"]
+delete_merged_file: TRUE

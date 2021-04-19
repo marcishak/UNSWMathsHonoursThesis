@@ -465,7 +465,7 @@
                 {\rmfamily\normalsize \@author}\\
         \end{center}
 \begin{figure} \begin{center}
-\includegraphics[width=5cm]{unsw-crest.jpg}
+\includegraphics[width=5cm]{figures/unsw-crest.jpg}
 \end{center} \end{figure}
         \vskip1cm
         \begin{center}  % Department changed to School July 1995
