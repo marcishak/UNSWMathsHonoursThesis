@@ -23,3 +23,14 @@ Empirical studies by @MH79 and @Metal82 found little difference in forecast accu
 
 The methods were less popular in academic circles until  @OKS97 introduced a state space formulation of some of the methods, which was extended in @HKSG02 to cover the full range of exponential smoothing methods.
 
+## External Scripts
+
+You can include scripts that are [not directly embedded](https://bookdown.org/yihui/rmarkdown-cookbook/option-code.html) 
+into the Rmd format
+by using `code=xfun::read_utf8("path/scripts/script.R")` in the chunk options eg:
+`{r echo=TRUE, code=xfun::read_utf8('scripts/histnorm.R')}`:
+
+
+```{r echo=TRUE, code=xfun::read_utf8('scripts/histnorm.R')}
+```
+or [by using labelled blocks in your script and using them as individual chunks](https://bookdown.org/yihui/rmarkdown-cookbook/read-chunk.html)
