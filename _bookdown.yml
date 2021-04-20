@@ -2,11 +2,4 @@ book_filename: "thesis"
 language:
   ui:
     chapter_name: "Chapter "
-rmd_files: ["A0-index.Rmd",
- "A1-perf-Plagiarism.Rmd",
- "A2-perf-Acknowledgements.Rmd",
- "A3-perf-Abstract.Rmd",
- "B1-chap1.Rmd",
- "B2-chap2.Rmd",
- "C1-appA.Rmd"]
 delete_merged_file: TRUE

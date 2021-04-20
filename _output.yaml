@@ -9,3 +9,18 @@ bookdown::pdf_book:
     "--top-level-division=chapter"
   ]
   citation_package: biblatex
+  rmd_files: ["A0-index.Rmd",
+ "A1-perf-Plagiarism.Rmd",
+ "A2-perf-Acknowledgements.Rmd",
+ "A3-perf-Abstract.Rmd",
+ "B1-chap1.Rmd",
+ "B2-chap2.Rmd",
+ "C1-appA.Rmd",
+ "C2-refs.Rmd"]
+bookdown::gitbook:
+  rmd_files: ["A2-perf-Acknowledgements.Rmd",
+ "A3-perf-Abstract.Rmd",
+ "B1-chap1.Rmd",
+ "B2-chap2.Rmd",
+ "C1-appA.Rmd",
+ "C2-refs.Rmd"]

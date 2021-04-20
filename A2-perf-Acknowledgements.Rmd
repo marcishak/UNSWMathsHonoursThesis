@@ -1,7 +1,9 @@
 ---
+title: 'Thesis title'
 knit: "bookdown::render_book"
 ---
 
+`r if (knitr::is_html_output()) '# Acknowledgements {-}'`
 
 
 <!-- Acknowledgements are optional -->

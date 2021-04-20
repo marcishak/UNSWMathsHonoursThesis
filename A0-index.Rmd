@@ -6,6 +6,8 @@ output: bookdown::pdf_book
 site: bookdown::bookdown_site
 link-citations: yes
 knit: "bookdown::render_book"
+bibliography: thesisrefs.bib
+
 ---
 
 <!-- 
@@ -24,17 +26,17 @@ You will also need LaTeX installed on your computer.
 
 <!-- Title Page -->
 
-\title{$title$}
+\title{ERGM Title}
 
-\authornameonly{$student$}
+\authornameonly{Marc Ishak}
 
-\author{\Authornameonly\\{\bigskip}Supervisor: $supervisor$}
+\author{\Authornameonly\\{\bigskip}Supervisor: Dr. Pavel Krivitsky}
 
 \hypersetup{
      %pdfsubject={The Subject},
      %pdfkeywords={Some Keywords},
-     pdfauthor={$student$},
-     pdftitle={$title$},
+     pdfauthor={Marc Ishak},
+     pdftitle={ERGM Title},
      pdfproducer={Bookdown with LaTeX}
 }
 
