@@ -7,6 +7,8 @@ knit: "bookdown::render_book"
 
 \prefacesection{Plagiarism statement}
 
+<!-- # Plagiarism statement -->
+
 \vskip 10pc \noindent I declare that this thesis is my
 own work, except where acknowledged, and has not been submitted for
 academic credit elsewhere.
