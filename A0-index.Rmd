@@ -26,11 +26,10 @@ You will also need LaTeX installed on your computer.
 
 <!-- Title Page -->
 
-\title{ERGM Title}
+\title{\RMarkdownTitle}
 
-\authornameonly{Joe Bloggs}
 
-\author{\Authornameonly\\{\bigskip}Karl Marx}
+\author{\Authornameonly\\{\bigskip}\Supervisorname}
 
 \hypersetup{
      %pdfsubject={The Subject},

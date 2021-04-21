@@ -24,3 +24,4 @@ bookdown::gitbook:
  "B2-chap2.Rmd",
  "C1-appA.Rmd",
  "C2-refs.Rmd"]
+  sharing: no

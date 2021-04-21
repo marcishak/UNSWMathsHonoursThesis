@@ -424,6 +424,8 @@
 % A new definition, mainly for the DECLARATION.
 %-----------------------------------------------------------------------
 \newcommand{\authornameonly}[1]{\gdef\Authornameonly{#1}}
+\newcommand{\supervisorname}[1]{\gdef\Supervisorname{#1}}
+\newcommand{\rMarkdownTitle}[1]{\gdef\RMarkdownTitle{#1}}
 %-----------------------------------------------------------------------
 % Title page, copyrightpage and declaration page definitions.
 % Add re-definition for Honours reports rather than Higher Degree
