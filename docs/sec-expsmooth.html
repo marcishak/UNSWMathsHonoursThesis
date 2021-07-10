@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 Exponential Smoothing | Thesis title</title>
   <meta name="description" content="Chapter 2 Exponential Smoothing | Thesis title" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 Exponential Smoothing | Thesis title" />
   <meta property="og:type" content="book" />
@@ -31,7 +31,7 @@
   
 <link rel="prev" href="ch-intro.html"/>
 <link rel="next" href="additional-stuff.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -49,12 +49,15 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 <style type="text/css">
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
@@ -115,6 +118,7 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+
 </head>
 
 <body>
@@ -173,9 +177,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="citations" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> Citations</h2>
 <p>All citations should be done using markdown notation as shown below. This way, your bibliography will be compiled automatically and correctly.</p>
-<p>Exponential smoothing was originally developed in the late 1950s <span class="citation">(<a href="references.html#ref-Brown59" role="doc-biblioref">Brown 1959</a>, <a href="references.html#ref-Brown63" role="doc-biblioref">1963</a>; <a href="references.html#ref-Holt57" role="doc-biblioref">Holt 1957</a>; <a href="references.html#ref-Winters60" role="doc-biblioref">Winters 1960</a>)</span>. Because of their computational simplicity and interpretability, they became widely used in practice.</p>
-<p>Empirical studies by <span class="citation"><a href="references.html#ref-MH79" role="doc-biblioref">Makridakis and Hibon</a> (<a href="references.html#ref-MH79" role="doc-biblioref">1979</a>)</span> and <span class="citation"><a href="references.html#ref-Metal82" role="doc-biblioref">Makridakis et al.</a> (<a href="references.html#ref-Metal82" role="doc-biblioref">1982</a>)</span> found little difference in forecast accuracy between exponential smoothing and ARIMA models. This made the family of exponential smoothing procedures an attractive proposition <span class="citation">(see <a href="references.html#ref-CKOS01" role="doc-biblioref">Chatfield et al. 2001</a>)</span>.</p>
-<p>The methods were less popular in academic circles until <span class="citation"><a href="references.html#ref-OKS97" role="doc-biblioref">Ord, Koehler, and Snyder</a> (<a href="references.html#ref-OKS97" role="doc-biblioref">1997</a>)</span> introduced a state space formulation of some of the methods, which was extended in <span class="citation"><a href="references.html#ref-HKSG02" role="doc-biblioref">Hyndman et al.</a> (<a href="references.html#ref-HKSG02" role="doc-biblioref">2002</a>)</span> to cover the full range of exponential smoothing methods.</p>
+<p>Exponential smoothing was originally developed in the late 1950s <span class="citation">[@Brown59;@Brown63;@Holt57;@Winters60]</span>. Because of their computational simplicity and interpretability, they became widely used in practice.</p>
+<p>Empirical studies by <span class="citation">@MH79</span> and <span class="citation">@Metal82</span> found little difference in forecast accuracy between exponential smoothing and ARIMA models. This made the family of exponential smoothing procedures an attractive proposition <span class="citation">[see @CKOS01]</span>.</p>
+<p>The methods were less popular in academic circles until <span class="citation">@OKS97</span> introduced a state space formulation of some of the methods, which was extended in <span class="citation">@HKSG02</span> to cover the full range of exponential smoothing methods.</p>
 </div>
 <div id="external-scripts" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> External Scripts</h2>
@@ -225,6 +229,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
