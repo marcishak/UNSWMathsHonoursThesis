@@ -2,7 +2,8 @@
 % UNSWThesis.cls : A thesis style of UNSW modified from ADFAThesis.cls
 %-----------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{unswthesis}[2021/04/18 UNSW thesis class]
+% \ProvidesClass{unswthesis}[2021/04/18 UNSW thesis class]
+\ProvidesClass{template/unswthesis}[2021/04/18 UNSW thesis class]
 
 
 
