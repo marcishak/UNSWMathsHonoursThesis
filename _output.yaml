@@ -1,5 +1,5 @@
 bookdown::pdf_book:
-  template: unswthesis.tex
+  template: template/unswthesis.tex
   fig_caption: yes
   fig_height: 3.8
   fig_width: 6.3
@@ -11,3 +11,4 @@ bookdown::pdf_book:
   citation_package: biblatex
 bookdown::gitbook:
   sharing: no
+  split_by: "section"

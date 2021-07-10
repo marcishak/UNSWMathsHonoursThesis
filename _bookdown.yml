@@ -15,8 +15,8 @@ rmd_files:
   "chapters/C2-refs.Rmd"
   ]
   html: [
-    "chapters/A2-perf-Acknowledgements.Rmd",
     "chapters/A3-perf-Abstract.Rmd",
+    "chapters/A2-perf-Acknowledgements.Rmd",
     "chapters/B1-chap1.Rmd",
     "chapters/B2-chap2.Rmd",
     "chapters/C1-appA.Rmd",
