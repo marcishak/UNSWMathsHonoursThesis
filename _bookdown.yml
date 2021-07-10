@@ -3,3 +3,22 @@ language:
   ui:
     chapter_name: "Chapter "
 delete_merged_file: TRUE
+rmd_files:
+  latex:  [
+  "chapters/A0-index.Rmd",
+  "chapters/A1-perf-Plagiarism.Rmd",
+  "chapters/A2-perf-Acknowledgements.Rmd",
+  "chapters/A3-perf-Abstract.Rmd",
+  "chapters/B1-chap1.Rmd",
+  "chapters/B2-chap2.Rmd",
+  "chapters/C1-appA.Rmd",
+  "chapters/C2-refs.Rmd"
+  ]
+  html: [
+    "chapters/A3-perf-Abstract.Rmd",
+    "chapters/A2-perf-Acknowledgements.Rmd",
+    "chapters/B1-chap1.Rmd",
+    "chapters/B2-chap2.Rmd",
+    "chapters/C1-appA.Rmd",
+    "chapters/C2-refs.Rmd"
+  ]

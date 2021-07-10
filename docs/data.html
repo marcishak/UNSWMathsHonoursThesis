@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Thesis title</title>
-  <meta name="description" content="Thesis title" />
+  <title>1.2 Data | Thesis title</title>
+  <meta name="description" content="1.2 Data | Thesis title" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Thesis title" />
+  <meta property="og:title" content="1.2 Data | Thesis title" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Thesis title" />
+  <meta name="twitter:title" content="1.2 Data | Thesis title" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="index.html"/>
+<link rel="prev" href="rmarkdown.html"/>
+<link rel="next" href="figures.html"/>
 <script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -166,20 +166,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Thesis title</h1>
-</div>
-<div id="abstract" class="section level1 unnumbered">
-<h1>Abstract</h1>
-
+<div id="data" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Data</h2>
+<p>Included in this template is a file called <code>sales.csv</code>. This contains quarterly data on Sales and Advertising budget for a small company over the period 1981–2005. It also contains the GDP (gross domestic product) over the same period. All series have been adjusted for inflation. We can load in this data set using the following command:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="data.html#cb1-1" aria-hidden="true" tabindex="-1"></a>sales <span class="ot">&lt;-</span> <span class="fu">ts</span>(<span class="fu">read.csv</span>(<span class="st">&quot;data/sales.csv&quot;</span>)[,<span class="sc">-</span><span class="dv">1</span>], <span class="at">start=</span><span class="dv">1981</span>, <span class="at">frequency=</span><span class="dv">4</span>)</span></code></pre></div>
+<p>Any data you use in your thesis can go into the data directory. The data should be in exactly the format you obtained it. Do no editing or manipulation of the data outside of R. Any data munging should be scripted in R and form part of your thesis files (possibly hidden in the output).</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="index.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="rmarkdown.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="figures.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

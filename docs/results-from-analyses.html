@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Thesis title</title>
-  <meta name="description" content="Thesis title" />
+  <title>1.4 Results from analyses | Thesis title</title>
+  <meta name="description" content="1.4 Results from analyses | Thesis title" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Thesis title" />
+  <meta property="og:title" content="1.4 Results from analyses | Thesis title" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Thesis title" />
+  <meta name="twitter:title" content="1.4 Results from analyses | Thesis title" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="index.html"/>
+<link rel="prev" href="figures.html"/>
+<link rel="next" href="tables.html"/>
 <script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -166,20 +166,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Thesis title</h1>
-</div>
-<div id="abstract" class="section level1 unnumbered">
-<h1>Abstract</h1>
-
+<div id="results-from-analyses" class="section level2" number="1.4">
+<h2><span class="header-section-number">1.4</span> Results from analyses</h2>
+<p>We can fit a dynamic regression model to the sales data.</p>
+<p>If <span class="math inline">\(y_t\)</span> denotes the sales in quarter <span class="math inline">\(t\)</span>, <span class="math inline">\(x_t\)</span> denotes the corresponding advertising budget and <span class="math inline">\(z_t\)</span> denotes the GDP, then the resulting model is:
+<span class="math display">\[\begin{equation}
+  y_t - y_{t-4} = \beta (x_t-x_{t-4}) + \gamma (z_t-z_{t-4}) + \theta_1 \varepsilon_{t-1} + \Theta_1 \varepsilon_{t-4} + \varepsilon_t
+\end{equation}\]</span>
+where
+<span class="math inline">\(\beta = 2.28\)</span>,
+<span class="math inline">\(\gamma = 0.97\)</span>,
+<span class="math inline">\(\theta_1 = NA\)</span>,
+and
+<span class="math inline">\(\Theta_1 = -0.90\)</span>.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="index.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="figures.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="tables.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

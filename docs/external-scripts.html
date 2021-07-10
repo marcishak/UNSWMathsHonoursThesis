@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Thesis title</title>
-  <meta name="description" content="Thesis title" />
+  <title>2.3 External Scripts | Thesis title</title>
+  <meta name="description" content="2.3 External Scripts | Thesis title" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Thesis title" />
+  <meta property="og:title" content="2.3 External Scripts | Thesis title" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Thesis title" />
+  <meta name="twitter:title" content="2.3 External Scripts | Thesis title" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="index.html"/>
+<link rel="prev" href="citations.html"/>
+<link rel="next" href="additional-stuff.html"/>
 <script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -166,20 +166,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Thesis title</h1>
-</div>
-<div id="abstract" class="section level1 unnumbered">
-<h1>Abstract</h1>
+<div id="external-scripts" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> External Scripts</h2>
+<p>You can include scripts that are <a href="https://bookdown.org/yihui/rmarkdown-cookbook/option-code.html">not directly embedded</a>
+into the Rmd format
+by using <code>code=xfun::read_utf8("path/scripts/script.R")</code> in the chunk options eg:
+<code>{r echo=TRUE, code=xfun::read_utf8('scripts/histnorm.R')}</code>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="external-scripts.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># histnorm.R</span></span>
+<span id="cb2-2"><a href="external-scripts.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Takes 1000s draws of a normal distribution and plots it&#39;s histogram</span></span>
+<span id="cb2-3"><a href="external-scripts.html#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="external-scripts.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># draw samples</span></span>
+<span id="cb2-5"><a href="external-scripts.html#cb2-5" aria-hidden="true" tabindex="-1"></a>vec <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">1000</span>)</span>
+<span id="cb2-6"><a href="external-scripts.html#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="external-scripts.html#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># plot histogram</span></span>
+<span id="cb2-8"><a href="external-scripts.html#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(vec)</span></code></pre></div>
+<p><img src="thesis_files/figure-html/unnamed-chunk-2-1.png" width="672" />
+or <a href="https://bookdown.org/yihui/rmarkdown-cookbook/read-chunk.html">by using labelled blocks in your script and using them as individual chunks</a></p>
 
 </div>
+<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="index.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="citations.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="additional-stuff.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
